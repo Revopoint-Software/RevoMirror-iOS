@@ -1,0 +1,45 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+#include <TargetConditionals.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#if TARGET_OS_IPHONE
+    #import <UIKit/UIKit.h>
+#elif TARGET_OS_MAC
+    #import <AppKit/AppKit.h>
+#endif
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import "Logger.h"
+#import "Masonry.h"
+#import "RMI_Tools.h"
+#import "RMI_TSNotificationCenter.h"
+#import "UIDevice+DeviceType.h"
+#import "RMI_MirrorStr.h"
+
+#define IS_PhoneXAll [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0
+#define RMI_StatusBarHeight                  (IS_PhoneXAll ? [UIDevice statusHeight]-11 : 0.f)
+#define RMI_IPHONE_WIDTH                   [UIScreen mainScreen].bounds.size.width
+#define RMI_IPHONE_HEIGHT                  [UIScreen mainScreen].bounds.size.height
+
+#define UIColorFromRGBA(rgbValue, alphaValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:alphaValue]
+#define UIColorFromRGB(rgbValue) UIColorFromRGBA(rgbValue, 1.0)
+
+//弱引用
+#define RMI_WeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#endif
