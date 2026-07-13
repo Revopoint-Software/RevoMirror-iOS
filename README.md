@@ -101,7 +101,7 @@ RevoMirror-iOS is distributed under the **GNU General Public License v3.0
 (GPL-3.0)**, consistent with the license of the original Moonlight iOS/tvOS
 project.
 
-See [`RevoMirror_iOS/LICENSE.txt`](RevoMirror_iOS/LICENSE.txt) for the license
+See [LICENSE](./LICENSE) for the license
 text.
 
 ## Acknowledgements & Credits
