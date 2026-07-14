@@ -111,8 +111,3 @@ RevoMirror-iOS 基于以下优秀开源项目构建：
   串流主机。
 
 本仓库保留了原始项目的版权和许可证声明。
-
-## 关于 Revopoint Software
-
-RevoMirror-iOS 由 **Revopoint Software（西安知象光电科技有限公司，Xi'an
-Chishine Optoelectronics Technology Co., Ltd.）** 开发并维护。

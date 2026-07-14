@@ -116,8 +116,3 @@ RevoMirror-iOS is built upon the excellent work of:
   Moonlight-compatible streaming.
 
 Original copyright and license notices are retained in the source tree.
-
-## About Revopoint Software
-
-RevoMirror-iOS is developed and maintained by **Revopoint Software**
-(Xi'an Chishine Optoelectronics Technology Co., Ltd.).
