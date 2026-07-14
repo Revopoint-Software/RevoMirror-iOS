@@ -10,7 +10,7 @@
 
 ## 项目简介
 
-**RevoMirror-iOS** 是由 **Revopoint Software（西安知象光电科技有限公司）**
+**RevoMirror-iOS** 是由 **Revopoint Software**
 开发的 iOS 客户端，用于在局域网内进行低延迟屏幕投屏和远程交互。
 
 本项目基于开源项目
